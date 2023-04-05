@@ -1,0 +1,3 @@
+﻿  task8.cpp
+C:\Users\rados\source\repos\practikum1\task8\task8\task8.cpp(42,27): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  task8.vcxproj -> C:\Users\rados\source\repos\practikum1\task8\Debug\task8.exe
