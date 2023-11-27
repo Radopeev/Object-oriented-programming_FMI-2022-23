@@ -18,17 +18,18 @@ private:
 	size_t padding = 0;
 	Column column[MAX_COLUMNS];
 
-	int findColumnValue(const char* name)const;
+	int findColumnValue(const char* name) const;
 	int findRowValue(const char* name, size_t index,const char* newName);
 	void formattingTable();
 	void gettingMaxRows();
-	void numOfColumnValidator(size_t i)const;
+	void numOfColumnValidator(size_t i) const;
 	void numOfColumnUpdate(size_t i);
 	void paddingAssignment();
 	void alignemntOfColumn();
-	void printOrWriteRow(size_t rowNum, std::ostream& output)const;
+	void printOrWriteRow(size_t rowNum, std::ostream& output) const;
 	void readRowFromFile(const char* buffer);
 	void removingSpacesFromTable();
+
 public:
 	void readTableFromFile(std::ifstream& myFile);
 	void printOrWriteTable(std::ostream& output) const;
