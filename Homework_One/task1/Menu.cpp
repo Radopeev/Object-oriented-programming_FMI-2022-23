@@ -41,23 +41,23 @@ void menu(Table& table) {
 				if (table.changeRowByColumnName(columnName, forChange, newName))
 				{
 					std::cout << OPERATION_EXECUTED << std::endl << std::endl;
+				} else {
+					std::cout << NOT_FOUND << std::endl;
 				}
-				else std::cout << NOT_FOUND << std::endl;
-			}
-			else {
+			} else {
 				if (table.changeColumnName(columnName, forChange))
 				{
 					std::cout << OPERATION_EXECUTED << std::endl << std::endl;
+				} else {
+					std::cout << NOT_FOUND << std::endl;
 				}
-				else std::cout << NOT_FOUND << std::endl;
 			}
 		}
  		else if (strcmp(command, CHANGE_ROW) == 0) {
 			size_t changeNum;
 			char columnName[MAX_CELL_SYMBOLS], newName[MAX_CELL_SYMBOLS];
 			ss >> changeNum >> columnName >> newName;
-			if (table.changeRowByNum(changeNum, columnName, newName))
-			{
+			if (table.changeRowByNum(changeNum, columnName, newName)) {
 				std::cout << OPERATION_EXECUTED << std::endl << std::endl;
 			}
 			else std::cout << NOT_FOUND << std::endl;
@@ -65,8 +65,7 @@ void menu(Table& table) {
 		else if (strcmp(command, SELECT_WHERE) == 0) {
 			char columnName[MAX_CELL_SYMBOLS], valueForPrint[MAX_CELL_SYMBOLS];
 			ss >> columnName >> valueForPrint;
-			if (!table.printSelected(columnName, valueForPrint))
-			{
+			if (!table.printSelected(columnName, valueForPrint)) {
 				std::cout << NOT_FOUND << std::endl; 
 			}
 			std::cout << std::endl;
