@@ -4,7 +4,7 @@
 
 using namespace Functions;
 
-void Table::numOfColumnValidator(size_t columns)const {
+void Table::numOfColumnValidator(size_t columns) const {
 	assert(columns < MAX_COLUMNS );
 }
 
@@ -34,13 +34,12 @@ void Table::alignemntOfColumn() {
 void Table::printOrWriteRow(size_t rowNum, std::ostream& output) const {
 	output << PIPE;
 	for (size_t i = 0; i < numOfColumns; i++) {
-		switch (column[i].getAlignement())
-		{
-		case Alignments::left: left(column[i].getRowValue(rowNum), padding, output); break;
-		case Alignments::center: center(column[i].getRowValue(rowNum), padding, output); break;
-		case Alignments::right: right(column[i].getRowValue(rowNum), padding, output); break;
-		default:
-			break;
+		switch (column[i].getAlignement()){
+			case Alignments::left: left(column[i].getRowValue(rowNum), padding, output); break;
+			case Alignments::center: center(column[i].getRowValue(rowNum), padding, output); break;
+			case Alignments::right: right(column[i].getRowValue(rowNum), padding, output); break;
+			default:
+				break;
 		}
 		output << PIPE;
 	}
@@ -112,7 +111,7 @@ int Table::findColumnValue(const char* name)const {
 	return -1;
 }
 
-int Table :: findRowValue(const char* name, size_t index,const char* newName) {
+int Table :: findRowValue(const char* name, size_t index, const char* newName) {
 	for (size_t i = 1; i < column[index].getNumOfRow(); i++) {
 			if (strcmp(column[index].getRowValue(i), name) == 0) {
 				column[index].setRowValue(newName, i);
@@ -152,7 +151,7 @@ bool Table::changeRowByNum(size_t changingNum, const char* columnName, const cha
 
 bool Table::changeRowByColumnName(const char* columnName, const char* forChange, const char* newName) {
 	int columnIndex = findColumnValue(columnName);
-	if(columnIndex!=-1){
+	if(columnIndex != -1){
 		int valueForChangeIndex = findRowValue(forChange, columnIndex, newName);
 		if (valueForChangeIndex != -1) {
 			column[columnIndex].setRowValue(newName, valueForChangeIndex);
