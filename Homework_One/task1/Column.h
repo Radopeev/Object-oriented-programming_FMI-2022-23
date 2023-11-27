@@ -5,13 +5,12 @@
 using namespace GlobalConstants;
 using namespace Messages;
 
-class Column
-{
+class Column {
 private:
-	struct Row	{
+	struct Row {
 		char value[MAX_CELL_SYMBOLS];
 	};
-	bool isValidColumn=true;
+	bool isValidColumn = true;
 	size_t numOfRow = 0;
 	Alignments alignmentFlag;
 	Row rows[MAX_ROWS];
