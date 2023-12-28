@@ -1,5 +1,0 @@
-﻿  practikum1.cpp
-C:\Users\rados\source\repos\practikum1\practikum1\practikum1.cpp(2,10): fatal error C1083: Cannot open include file: 'taks1.h': No such file or directory
-  task2.h
-c1xx : fatal error C1083: Cannot open source file: 'task2.h': No such file or directory
-  Generating Code...
