@@ -80,14 +80,14 @@ void MyString::copyFrom(const MyString& other)
 	strcpy(_data, other._data);
 }
 
-MyString::MyString(MyString&& other) noexcept
+MyString::MyString(MyString&& other) 
 {
-	_data = other._data; // to function moveFrom ?
+	_data = other._data; 
 	other._data = nullptr;
 	_length = other._length;
 }
 
-MyString& MyString::operator=(MyString&& other) noexcept
+MyString& MyString::operator=(MyString&& other) 
 {
 	if (this != &other)
 	{
