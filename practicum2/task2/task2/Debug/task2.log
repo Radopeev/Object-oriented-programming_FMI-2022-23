@@ -1,4 +1,0 @@
-﻿  task2.cpp
-C:\Users\rados\source\repos\practicum2\task2\task2\task2.cpp(8,17): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
-C:\Users\rados\source\repos\practicum2\task2\task2\task2.cpp(10,11): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
-  task2.vcxproj -> C:\Users\rados\source\repos\practicum2\task2\Debug\task2.exe

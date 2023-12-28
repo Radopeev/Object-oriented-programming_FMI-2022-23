@@ -1,3 +1,0 @@
-﻿  ConsoleApplication1.cpp
-C:\Users\rados\source\repos\practicum2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(12): warning C4715: 'print': not all control paths return a value
-  ConsoleApplication1.vcxproj -> C:\Users\rados\source\repos\practicum2\ConsoleApplication1\Debug\ConsoleApplication1.exe
