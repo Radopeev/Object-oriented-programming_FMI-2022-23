@@ -1,4 +1,0 @@
-﻿  task1.cpp
-C:\Users\rados\source\repos\practicum3\task1\task1\task1.cpp(9,20): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
-C:\Users\rados\source\repos\practicum3\task1\task1\task1.cpp(11,14): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
-  task1.vcxproj -> C:\Users\rados\source\repos\practicum3\task1\Debug\task1.exe
